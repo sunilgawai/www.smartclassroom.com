@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 // material-ui
@@ -12,7 +11,7 @@ import { activeItem } from '../../store/reducers/menu';
 
 // ==============================|| MAIN LOGO ||============================== //
 
-const LogoSection = ({ sx, to }) => {
+const LogoSection = ({ sx, to }:any) => {
   const { defaultId } = useSelector((state: any) => state.menu);
   const dispatch = useDispatch();
   return (
@@ -26,11 +25,6 @@ const LogoSection = ({ sx, to }) => {
       <Logo />
     </ButtonBase>
   );
-};
-
-LogoSection.propTypes = {
-  sx: PropTypes.object,
-  to: PropTypes.string
 };
 
 export default LogoSection;

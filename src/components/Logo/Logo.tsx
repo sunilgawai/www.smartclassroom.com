@@ -1,5 +1,5 @@
 // material-ui
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from "@mui/material/styles";
 
 /**
  * if you want to use image instead of <svg> uncomment following.
@@ -56,7 +56,7 @@ const Logo = () => {
     //     </defs>
     //   </svg>
     // </>
-    <img src='/smartclassroom.png' alt='Smartclassroom' />
+    <img src="/smartclassroom.png" alt="Smartclassroom" />
   );
 };
 
