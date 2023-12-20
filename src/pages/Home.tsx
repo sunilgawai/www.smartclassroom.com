@@ -26,13 +26,15 @@ const Home = () => {
           <Stack spacing={2} alignItems={"flex-start"}>
             <HeroHeading>Smart Classroom</HeroHeading>
             <HeroSubHeading>
-              Embark on your quest for excellence with access to a goldmine of
-              questions that hold the key to unlocking your academic potential.
-              Prepare with precision, practice with purpose, and achieve
-              remarkable results.
+              A web app for students and teacher to have proper classroom
+              communication. App contains features such as Auth, Role,
+              Permissions, File, Notes sharing, Attendance tracking and
+              real-time chat with notifications with socket connections.
             </HeroSubHeading>
             <Stack direction={"row"} spacing={1.5}>
-              <Button color="primary" style={{border: '1px solid lightblue'}}>submit questions</Button>
+              <Button color="primary" style={{ border: "1px solid lightblue" }}>
+                submit questions
+              </Button>
               <Button
                 variant="outlined"
                 component={Link}
