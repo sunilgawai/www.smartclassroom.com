@@ -7,6 +7,10 @@ import Schedule from "../pages/Schedule";
 import Announcement from "../pages/Announcement";
 import AdminLayout from "../layout/adminLayout";
 import AdminPage from "../pages/admin/Index";
+import Classrooms from "../pages/admin/classrooms";
+import Students from "../pages/admin/students";
+import Teachers from "../pages/admin/teachers";
+import Announcements from "../pages/admin/announcements";
 
 const router = createBrowserRouter([
   {
@@ -44,12 +48,20 @@ const router = createBrowserRouter([
         element: <AdminPage />,
       },
       {
-        path: "schedules",
-        element: <Schedule />,
+        path: "classrooms",
+        element: <Classrooms />,
+      },
+      {
+        path: "students",
+        element: <Students />,
+      },
+      {
+        path: "teachers",
+        element: <Teachers />,
       },
       {
         path: "announcements",
-        element: <Announcement />,
+        element: <Announcements />,
       },
     ],
   },
