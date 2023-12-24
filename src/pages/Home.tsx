@@ -1,4 +1,11 @@
-import { Typography, Button, Grid, styled, Stack } from "@mui/material";
+import {
+  Typography,
+  Button,
+  Grid,
+  styled,
+  Stack,
+  Container,
+} from "@mui/material";
 import { Link } from "react-router-dom";
 
 const HeroHeading = styled(Typography)(({ theme }) => ({
@@ -20,7 +27,7 @@ const HeroSubHeading = styled(Typography)(({ theme }) => ({
 
 const Home = () => {
   return (
-    <>
+    <Container maxWidth="xl">
       <Grid sx={{ height: "100vh", px: 5 }} alignItems={"center"} container>
         <Grid sm={6} item>
           <Stack spacing={2} alignItems={"flex-start"}>
@@ -54,7 +61,7 @@ const Home = () => {
           />
         </Grid>
       </Grid>
-    </>
+    </Container>
   );
 };
 

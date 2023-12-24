@@ -1,9 +1,9 @@
 // assets
-import { DashboardOutlined } from '@ant-design/icons';
+import { DashboardOutlined,DatabaseOutlined, } from '@ant-design/icons';
 
 // icons
 const icons = {
-  DashboardOutlined
+  DatabaseOutlined,
 };
 
 // ==============================|| MENU ITEMS - SUBJECT ||============================== //
@@ -18,7 +18,7 @@ const subjects = {
       title: "Java",
       type: "item",
       url: "/subjects/java",
-      icon: icons.DashboardOutlined,
+      icon: icons.DatabaseOutlined,
       breadcrumbs: false,
     },
     {
@@ -26,7 +26,7 @@ const subjects = {
       title: "Operating System",
       type: "item",
       url: "/subjects/os",
-      icon: icons.DashboardOutlined,
+      icon: icons.DatabaseOutlined,
       breadcrumbs: false,
     },
     {
@@ -34,7 +34,7 @@ const subjects = {
       title: "Data Structures & Algorithms",
       type: "item",
       url: "/subjects/dsa",
-      icon: icons.DashboardOutlined,
+      icon: icons.DatabaseOutlined,
       breadcrumbs: false,
     },
     {
@@ -42,7 +42,7 @@ const subjects = {
       title: "Networking",
       type: "item",
       url: "/subjects/networking",
-      icon: icons.DashboardOutlined,
+      icon: icons.DatabaseOutlined,
       breadcrumbs: false,
     },
     {
@@ -50,7 +50,7 @@ const subjects = {
       title: "Software Engineering",
       type: "item",
       url: "/subjects/se",
-      icon: icons.DashboardOutlined,
+      icon: icons.DatabaseOutlined,
       breadcrumbs: false,
     },
   ],

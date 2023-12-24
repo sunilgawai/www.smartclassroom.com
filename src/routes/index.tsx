@@ -1,40 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "./Layout";
 import Home from "../pages/Home";
 import Classroom from "../pages/Classroom";
 import Login from "../pages/auth/Login";
-import ForgotPassword from "../pages/auth/ForgotPassword";
-import AuthLayout from "./AuthLayout";
 import MainLayout from "../layout/MainLayout";
+import Schedule from "../pages/Schedule";
+import Announcement from "../pages/Announcement";
+import AdminLayout from "../layout/adminLayout";
+import AdminPage from "../pages/admin/Index";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      // {
-      //   path: "classroom",
-      //   element: <Classroom />,
-      // },
-    ],
+    element: <Home />,
   },
   {
     path: "/auth",
-    element: <AuthLayout />,
-    children: [
-      {
-        index: true,
-        element: <Login />,
-      },
-      {
-        path: "forgot-password",
-        element: <ForgotPassword />,
-      },
-    ],
+    element: <Login />,
   },
   {
     path: "/classroom",
@@ -43,6 +24,32 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Classroom />,
+      },
+      {
+        path: "schedules",
+        element: <Schedule />,
+      },
+      {
+        path: "announcements",
+        element: <Announcement />,
+      },
+    ],
+  },
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        index: true,
+        element: <AdminPage />,
+      },
+      {
+        path: "schedules",
+        element: <Schedule />,
+      },
+      {
+        path: "announcements",
+        element: <Announcement />,
       },
     ],
   },
